@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temoignages",
+  "info": {
+    "singularName": "temoignage",
+    "pluralName": "temoignages",
+    "displayName": "temoignages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nomClient": {
+      "type": "string",
+      "required": true
+    },
+    "ville": {
+      "type": "string"
+    },
+    "contenu": {
+      "type": "richtext",
+      "required": true
+    },
+    "note": {
+      "type": "integer",
+      "max": 5,
+      "min": 1,
+      "default": 5,
+      "required": true
+    }
+  }
+}

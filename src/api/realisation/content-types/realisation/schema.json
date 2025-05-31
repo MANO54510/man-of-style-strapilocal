@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "realisations",
+  "info": {
+    "singularName": "realisation",
+    "pluralName": "realisations",
+    "displayName": "realisations",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "salledebain",
+        "renovation",
+        "photovoltaique",
+        "facades",
+        "fermetures",
+        "decoration"
+      ]
+    },
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "localisation": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}

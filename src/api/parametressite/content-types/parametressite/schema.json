@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "parametressites",
+  "info": {
+    "singularName": "parametressite",
+    "pluralName": "parametressites",
+    "displayName": "parametressite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nomEntreprise": {
+      "type": "string",
+      "required": true
+    },
+    "telephone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "contacts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "expertise": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "message": {
+      "type": "blocks",
+      "required": true
+    },
+    "statut": {
+      "type": "enumeration",
+      "enum": [
+        "nouveau",
+        "traité",
+        "fermé"
+      ]
+    },
+    "dateCreation": {
+      "type": "datetime"
+    }
+  }
+}
