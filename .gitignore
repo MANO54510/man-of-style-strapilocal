@@ -133,6 +133,10 @@ database/migrations/*.*
 #################################################
 
 .env
+# Variables d'environnement sensibles (toutes variantes)
+.env.production
+.env production
+*.env.*
 
 #################################################
 # 9) Autres exclusions génériques
@@ -141,3 +145,4 @@ database/migrations/*.*
 *.swp
 *.swn
 *~
+
