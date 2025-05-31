@@ -1,0 +1,33 @@
+# Configuration pour OVH Cloud Web
+NODE_ENV=production
+HOST=0.0.0.0
+PORT=1337
+
+# URL de votre site (sera votre domaine OVH)
+URL=https://man-of-style.fr
+
+# Clés de sécurité (gardez vos clés existantes)
+APP_KEYS=2m91xtks904htkjf6tdeltee2nolikfg,wJHezIw5p6CgGDtsCOInJg==,Btw3eS0oBrmmz0smc2R74g==,lX6Bd9cpBIkdhLk/cFJcmg==
+API_TOKEN_SALT=zhpdldks7qcfkjg1ceihdgygdkye8f16
+ADMIN_JWT_SECRET=t0bg67kq21gvwgyapp5mdrsdbr3o88t1
+TRANSFER_TOKEN_SALT=rxd247jv92ijm8q5lmdwrw8d80q1ko6e
+ENCRYPTION_KEY=wucasSmGYVkGQhU8Z+VW3A==
+JWT_SECRET=8oqf0ketg67wzimz22sdids6twfpip1s
+
+# Base de données PostgreSQL (sera fournie par OVH)
+DATABASE_HOST=postgres.cluster-xxxx.eu-west-1.ovh.net
+DATABASE_PORT=5432
+DATABASE_NAME=votre_base
+DATABASE_USERNAME=votre_user
+DATABASE_PASSWORD=votre_password
+DATABASE_SSL=false
+
+# Configuration Strapi
+STRAPI_DISABLE_UPDATE_NOTIFICATION=true
+STRAPI_TELEMETRY_DISABLED=true
+BROWSER=false
+
+# Configuration email (optionnel)
+RESEND_API_KEY=re_jW8kifYT_GG6t5VgiZw5WjjWE9BYJcGLp
+EMAIL_FROM=contact@manofstyle.fr
+EMAIL_REPLY_TO=contact@manofstyle.fr
