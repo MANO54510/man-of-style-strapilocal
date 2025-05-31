@@ -14,12 +14,12 @@ TRANSFER_TOKEN_SALT=rxd247jv92ijm8q5lmdwrw8d80q1ko6e
 ENCRYPTION_KEY=wucasSmGYVkGQhU8Z+VW3A==
 JWT_SECRET=8oqf0ketg67wzimz22sdids6twfpip1s
 
-# Base de données PostgreSQL (sera fournie par OVH)
-DATABASE_HOST=postgres.cluster-xxxx.eu-west-1.ovh.net
-DATABASE_PORT=5432
-DATABASE_NAME=votre_base
-DATABASE_USERNAME=votre_user
-DATABASE_PASSWORD=votre_password
+# Base de données PostgreSQL OVH
+DATABASE_HOST=gm662401-001.eu.clouddb.ovh.net
+DATABASE_PORT=35247
+DATABASE_NAME=manofstyle
+DATABASE_USERNAME=MANO54510
+DATABASE_PASSWORD=Cleoethan54510
 DATABASE_SSL=false
 
 # Configuration Strapi
