@@ -1,27 +1,20 @@
-############################
-# OS X
-############################
+#################################################
+# 1) Fichiers temporaires systèmes (macOS, Windows, Linux)
+#################################################
 
+# macOS
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon
+Icon?
 .Spotlight-V100
 .Trashes
 ._*
 
-
-############################
 # Linux
-############################
-
 *~
 
-
-############################
 # Windows
-############################
-
 Thumbs.db
 ehthumbs.db
 Desktop.ini
@@ -31,76 +24,60 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-
-############################
-# Packages
-############################
+#################################################
+# 2) Archives et exécutables – ne pas versionner
+#################################################
 
 *.7z
-*.csv
-*.dat
-*.dmg
 *.gz
 *.iso
 *.jar
 *.rar
 *.tar
 *.zip
-*.com
-*.class
-*.dll
 *.exe
-*.o
-*.seed
+*.dll
 *.so
-*.swo
-*.swp
-*.swn
-*.swm
-*.out
-*.pid
 
+#################################################
+# 3) Logs et bases de données locales
+#################################################
 
-############################
-# Logs and databases
-############################
-
-.tmp
 *.log
 *.sql
 *.sqlite
 *.sqlite3
 
+#################################################
+# 4) Dossiers et fichiers temporaires/dev
+#################################################
 
-############################
-# Misc.
-############################
+# Strapi (SQLite local)
+.tmp/
+*.db
 
-*#
-ssl
-.idea
-nbproject
+# Dossier uploads local (on garde le .gitkeep, mais on ignore tout le reste)
 public/uploads/*
 !public/uploads/.gitkeep
-.tsbuildinfo
-.eslintcache
 
-############################
-# Node.js
-############################
+# Cache et coverage
+.cache/
+coverage/
 
-lib-cov
+# Fichiers de tests ou reports
+coverage/
 lcov.info
-pids
-logs
-results
-node_modules
-.node_history
+jest-report.xml
 
-############################
-# Package managers
-############################
+#################################################
+# 5) Node.js / NPM / Yarn
+#################################################
 
+# Dependances Node (elles seront réinstallées via npm ci ou yarn install)
+node_modules/
+
+# Verrouillage Yarn 2+/Plug’n’Play (si vous utilisez Yarn)
+.pnp.*
 .yarn/*
 !.yarn/cache
 !.yarn/unplugged
@@ -108,24 +85,59 @@ node_modules
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-.pnp.*
-yarn-error.log
 
-############################
-# Tests
-############################
+# Fichiers de lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-coverage
+# TypeScript compilé
+*.js
+*.js.map
 
-############################
-# Strapi
-############################
+# Cache TS (optionnel)
+*.tsbuildinfo
 
-.env
-license.txt
-exports
+#################################################
+# 6) Editeurs et IDE
+#################################################
+
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swo?
+nbproject/
+
+#################################################
+# 7) Strapi v4 (TypeScript) – outputs à ignorer
+#################################################
+
+# Dossier généré par Strapi au build (JS compilé / dist)
+dist/
+build/
+
+# Fichier de migration généré (vidé normalement)
+database/migrations/*.*
+
+# Config Strapi pour mises à jour automatiques
 .strapi
-dist
-build
 .strapi-updater.json
 .strapi-cloud.json
+
+#################################################
+# 8) Fichiers d’environnement locaux (vos secrets)
+#################################################
+
+.env
+
+#################################################
+# 9) Autres exclusions génériques
+#################################################
+
+*.swp
+*.swn
+*~
